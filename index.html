@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Uncle was WAY too comfortable in the back seat… what’s going on here?! 😭🤭</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: #101014;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 18px 12px;
+      text-align: center;
+      background: #191a1f;
+      border-bottom: 1px solid #303039;
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 20px 12px;
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border: 1px solid #303039;
+      border-radius: 12px;
+      background: #000;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 78vh;
+      background: #000;
+    }
+
+    /* Advertisement overlay */
+    .native-ad {
+      position: absolute;
+      z-index: 5;
+      left: 4%;
+      right: 4%;
+      bottom: 12%;
+      padding: 12px;
+      background: rgba(25, 26, 31, 0.97);
+      border: 1px solid #454650;
+      border-radius: 10px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+      text-align: center;
+    }
+
+    .ad-label {
+      display: block;
+      margin-bottom: 8px;
+      color: #ccc;
+      text-align: left;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+
+    .ad-image-link {
+      display: block;
+    }
+
+    .ad-image-link img {
+      display: block;
+      width: 100%;
+      max-height: 160px;
+      object-fit: contain;
+      margin: 0 auto;
+      border-radius: 5px;
+    }
+
+    /* X links to the offer; it does not close the banner */
+    .ad-offer-link {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 6;
+      width: 28px;
+      height: 28px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #777;
+      border-radius: 50%;
+      background: #111;
+      color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .offer-button {
+      display: inline-block;
+      margin-top: 9px;
+      padding: 9px 18px;
+      border-radius: 5px;
+      background: #ffd900;
+      color: #111;
+      font-size: 13px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .offer-button:hover {
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 12px;
+      text-align: center;
+      background: #18181e;
+      border-top: 1px solid #303039;
+      color: #ccc;
+      font-size: 13px;
+    }
+
+    @media (max-width: 400px) {
+      main {
+        padding: 12px 7px;
+      }
+
+      .native-ad {
+        left: 3%;
+        right: 3%;
+        bottom: 10%;
+        padding: 9px;
+      }
+
+      .ad-image-link img {
+        max-height: 120px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <main>
+    <div class="video-frame">
+
+      <video
+        controls
+        autoplay
+        playsinline
+        preload="metadata"
+        controlslist="nodownload noremoteplayback"
+        disablepictureinpicture
+      >
+        <source
+          src="https://cdn2.videy.co/Io6ZIN4R1.mp4"
+          type="video/mp4"
+        >
+        Your browser does not support HTML video.
+      </video>
+
+
+    </div>
+  </main>
+  <header>
+      <aside class="native-ad" aria-label="Advertisement">
+
+        <!-- This X opens the offer in a new tab -->
+        <a
+          class="ad-offer-link"
+          href="https://vid.blackrider.my.id/rc"
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+          aria-label="Open offer"
+          title="Open offer"
+        >×</a>
+
+        <span class="ad-label">GOOGLE ADVERTISEMENT</span>
+
+        <!-- Clicking the image opens the same offer -->
+        <a
+          class="ad-image-link"
+          href="https://vid.blackrider.my.id/rc"
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+          aria-label="View advertised offer"
+        >
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiylMnwy82sJw1SAzqrO3afTIiWjiBr-R3TQPw79M0YjLL2fr2UlxyXvzYAA-SmCHstFMhEXuBK8Jh8Bsp16TelcyA2dAckOfa4HlGWKPCtTWdpEA3ShRFmsQ_U1HSBsACy90doxi_spivsye29OfgQlI9qLIhOxY7cEKBqQO7bOmP5nP1MI1oUynUxu7hZ/s1536/Watch%20Videos,%20Earn%20%C2%A310,000.png"
+            alt="Advertisement — view offer"
+          >
+        </a>
+
+        <a
+          class="offer-button"
+          href="https://vid.blackrider.my.id/rc"
+          target="_blank"
+          rel="sponsored noopener noreferrer"
+        >
+          Watch & Get a Cash →
+        </a>
+
+      </aside>
+  </header>
+  <footer>
+    © 2026 Blacked Streaming. All rights reserved.
+  </footer>
+
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,5036646,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?5036646&101" alt="php hit counter" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+
+</body>
+</html>
